@@ -1,0 +1,954 @@
+@font-face {
+    font-family: Arial;
+    src: url('../fonts/arial/bold/Arial Bold.otf');
+    src: local('0'), url('../fonts/arial/bold/Arial-Bold.eot') format('eot'), url('../fonts/arial/bold/Arial-Bold.woff2') format('woff2'), url('../fonts/arial/bold/Arial-Bold.woff') format('woff'), url('../fonts/arial/bold/Arial-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Arial;
+    src: url('../fonts/arial/bold/Arial Bold.otf');
+    src: local('0'), url('../fonts/arial/regular/Arial-Regular.eot') format('eot'), url('../fonts/arial/regular/Arial-Regular.woff2') format('woff2'), url('../fonts/arial/regular/Arial-Regular.woff') format('woff'), url('../fonts/arial/regular/Arial-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Trebuchet;
+    src: url('../fonts/Trebuchet/Bold/Trebuchet-MS-Bold.otf');
+    src: local('0'), url('../fonts/Trebuchet/Bold/Trebuchet-MS-Bold.eot') format('eot'), url('../fonts/Trebuchet/Bold/Trebuchet-MS-Bold.woff2') format('woff2'), url('../fonts/Trebuchet/Bold/Trebuchet-MS-Bold.woff') format('woff'), url('../fonts/Trebuchet/Bold/Trebuchet-MS-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*vars*/
+:root {
+    --Dm-sans:'DM Sans', sans-serif;
+    --Main: 'Roboto', sans-serif;
+    --red: #CB0000;
+    --blue: #008BAA;
+    --black: #000;
+    --gray: #777777;
+    --white: #fff;
+    --yellow: #FFF200;
+    --btn-collor: #008BAA;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: var(--Main);
+}
+
+
+
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+/*vars*/
+/*page*/
+/*container*/
+/*header*/
+/*main*/
+/*intro*/
+/*trip-card*/
+/*rating*/
+/*examples*/
+/*promotion*/
+/*articles*/
+/*main-article*/
+/*simple-article*/
+/*footer*/
+
+/*media*/
+
+
+
+/*page*/
+
+
+.page {
+    width: 100%;
+    max-width: 1400px;
+    display: block;
+
+    margin: 0 auto;
+
+}
+
+/*main*/
+
+.main {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+/*container*/
+
+.container {
+    width: 100%;
+    max-width: 1070px;
+    display: block;
+    align-items: center;
+
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*header*/
+
+.header {
+    width: 100%;
+    background-color: var(--blue);
+
+    padding: 30px 0;
+    margin-bottom: 24px;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__block {
+    display: flex;
+    column-gap: 14px;
+    row-gap: 14px;
+    align-items: center;
+}
+
+.header__title {
+
+    font-weight: 400;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.header__list.header__list-mobile {
+    display: none;
+}
+
+.header__list a{
+    display: block;
+    font-family: var(--Main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: none;
+    line-height: 34px;
+    color: var(--white);
+
+    transition: all .2s linear;
+}
+
+.header__list a:hover {
+    transition: all .2s linear;
+    transform: scale(1.1);
+    color: var(--yellow);
+
+}
+
+.header__list img {
+    display: block;
+}
+
+.header__list button {
+    display: block;
+    font-family: var(--Main);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--white);
+
+    transition: all .1s linear;
+}
+
+.header__list button:hover {
+    cursor: pointer;
+    transition: all .1s linear;
+    transform: scale(1.03);
+}
+
+/*trip-card*/
+
+.trip-card {
+    margin-bottom: 57px;
+}
+
+.trip-card__head {
+
+
+    -webkit-background: url(../images/hero-image.jpg) no-repeat center ;
+    -moz--background: url(../images/hero-image.jpg) no-repeat center ;
+    background: url(../images/hero-image.jpg) no-repeat center ;
+    background-size: cover;
+    border-radius: 6px;
+
+    padding-top: 294px;
+    padding-bottom: 33px;
+    margin-bottom: 20px;
+}
+
+.trip-card__contant {
+    width: 100%;
+    max-width: 250px;
+
+    text-align: center;
+
+    border-radius: 50%;
+    background-color: rgba(255, 242, 0, .7);
+
+    padding: 45px;
+    margin-left: 33px ;
+}
+
+.trip-card__name {
+    display: block;
+    text-align: center;
+
+    margin: 0 auto 16px;
+
+    font-family: 'Trebuchet';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+}
+.trip-card__info span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-family: 'Trebuchet';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.trip-card__info span:last-child {
+    width: auto;
+    display: inline;
+    background: var(--black);
+
+    padding: 0 10px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+
+}
+
+.trip-card__description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trip-card__description-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+.trip-card__description-top {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.trip-card__description-title a{
+    font-family: 'Trebuchet';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 130%;
+    color: var(--black);
+    text-decoration: none;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.trip-card__description-price {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 130%;
+    /* identical to box height, or 45px */
+    text-align: center;
+
+    /* text/$color-text */
+
+    color: #000000;
+}
+
+.trip-card__descriptiop-days {
+    margin-top: -30px;
+    margin-right: 65px;
+
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 31px;
+}
+
+.trip-card__descriptiop-days span{
+    display: block;
+    font-family: 'Trebuchet';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 62px;
+    /* identical to box height */
+
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: var(--gray);
+
+}
+
+/*rating*/
+.rating {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.rating__wrapper {
+    display: flex;
+    column-gap: 15px;
+}
+
+.rating-star {
+    display: flex;
+}
+
+.rating__main {
+    display: flex;
+    width: 52px;
+    height: 52px;
+
+    margin-right: 7px;
+
+    background: var(--blue);
+
+    font-family: 'Trebuchet';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+}
+
+.rating__reviews {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+    /* text/$color-text */
+
+    color: #000000;
+}
+
+.rating__service {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+.rating__result {
+    font-weight: 700;
+}
+
+/*examples*/
+
+.examples {
+    display: flex;
+    column-gap: 40px;
+}
+
+.examples__block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.examples__title {
+    margin-bottom: 15px;
+}
+
+.examples__title span{
+    width: auto;
+
+    font-family: 'Trebuchet';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 130%;
+
+    color: #000000;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+}
+
+.examples__title-red span {
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.examples__price span {
+    font-family: 'Trebuchet';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 130%;
+    /* identical to box height, or 45px */
+
+    text-align: right;
+}
+
+.examples__price.new-old span{
+    display: block;
+    line-height: 130%;
+}
+
+.examples__price.new-old span:nth-child(2) {
+    font-family: 'Trebuchet';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+    text-decoration: line-through;
+    text-decoration-color: var(--red) ;
+
+    text-align: end;
+
+    /* text/$color-text-secondary */
+
+    color: #777777;
+
+    position: relative;
+}
+
+
+
+/*promotion*/
+
+.promotion {
+    padding-top: 35px;
+
+    border: 1px solid #E0E0E0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 6px;
+}
+
+.promotion__info {
+    display: flex;
+    column-gap: 15px;
+    justify-content: space-between;
+
+    margin: 0 24px;
+    padding-bottom: 35px;
+}
+
+.promotion__value {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    /* or 34px */
+
+    text-align: center;
+
+    /* basiccolors/$color-primary */
+
+    color: #008BAA;
+}
+
+.promotion__info-more {
+
+    width: 100%;
+    display: block;
+
+    background: #F7F7F7;
+
+    position: relative;
+}
+.promotion__info-code span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--blue);
+}
+
+.promotion__info-condition {
+    margin-bottom: 8px;
+}
+.promotion__info-condition span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+    color: var(--black);
+}
+
+.promotion__info-code-used span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.promotion__btn {
+
+    padding: 13px 82px;
+
+
+    background: linear-gradient(180deg, #00AAAA 0%, #008BAA 100%);
+    border-radius: 24px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--white);
+}
+
+.promotion__show {
+    display: flex;
+
+    border: none;
+    column-gap: 7px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    /* identical to box height, or 16px */
+    cursor: pointer;
+
+    padding: 16px 0;
+    margin: 0 auto;
+
+    align-items: center;
+    vertical-align: middle;
+
+    /* text/$color-text-secondary */
+
+    color: #777777;
+}
+.promotion__show-img {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+
+    transition: all .1s linear;
+}
+
+.promotion__show-img.see {
+    transition: all .1s linear;
+    transform: rotatex(180deg);
+}
+
+.promotion__info-more-text {
+    display: block;
+
+
+    padding: 15px;
+
+    background-color: #F7F7F7;;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    text-align: start;
+    /* text/$color-text */
+
+    color: #000000;
+    position: absolute;
+
+    left: 0;
+    z-index: 5;
+
+    transform: rotateX(90deg);
+
+}
+
+.promotion__info-more-text.see {
+    transform: rotateX(0deg);
+}
+
+/*intro*/
+
+.intro {
+    margin-bottom: 65px;
+}
+
+/*information*/
+
+.information__articles {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 37px;
+}
+
+.information__sidebar {
+    width: 22%;
+
+    display: flex;
+    align-items: center;
+}
+
+.information__sidebar-index span {
+    font-family: 'Trebuchet';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 116px;
+    /* identical to box height */
+
+    letter-spacing: -0.05em;
+
+    /* text/$color-text-secondary */
+
+    color: var(--gray);
+}
+
+.information__sidebar-title {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 31px;
+    letter-spacing: -1px;
+
+    /* text/$color-text */
+
+    color: var(--black);
+}
+
+.information__sidebar-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+
+    /* text/$color-text-secondary */
+
+    color: var(--gray);
+}
+
+/*articles*/
+
+/*main-article*/
+
+.main-article__title {
+    margin-bottom: 24px;
+
+    font-family: 'Trebuchet';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    color: var(--black);
+}
+
+.main-article__text p {
+    margin-bottom: 15px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* text/$color-text */
+
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*simple-article*/
+.simple-article {
+    margin-bottom: 20px;
+}
+
+.simple-article__title {
+    margin-bottom: 7px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.simple-article__text p, .simple-article__text i {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* text/$color-text */
+
+    color: #000000;
+
+}
+
+.simple-article__text span {
+    display: block;
+
+    margin: 20px auto;
+    margin-left: 50px;
+
+    padding-left: 10px;
+    font-style: italic;
+
+    border-left: 8px solid var(--blue);
+}
+
+/*customers-table*/
+
+
+.customers-table {
+    width: 100%;
+    max-width: 724px;
+
+    margin-bottom: 30px;
+}
+
+.customers-table tr:nth-child(1) {
+    background-color: #E0E0E0;
+}
+
+.customers-table tr:not(:last-child) {
+    border-bottom: 1px solid #E0E0E0;
+
+}
+
+.customers-table td, .customers-table th  {
+    padding: 20px 0 20px 5px;
+}
+
+.customers-table th  {
+    text-align: start;
+}
+
+/*signs*/
+
+.signs {
+    width: 100%;
+    max-width: 750px;
+
+    padding-bottom: 20px;
+}
+
+.signs__title {
+    margin-bottom: 10px;
+}
+
+.signs__list {
+    margin-left: 30px;
+    list-style: disc;
+}
+
+.signs__list li:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+/*footer*/
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 15px auto;
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 15px;
+}
+
+
+/*media*/
+
+@media(max-width: 991px) {
+    .header__title {
+        display: none;
+    }
+
+    .trip-card__descriptiop-days {
+        margin-right: 0;
+    }
+
+    .trip-card__descriptiop-days span {
+        font-size: 58px;
+        line-height: 32px;
+    }
+
+    .promotion__value {
+        font-size: 18px;
+    }
+
+    .promotion__btn {
+        padding: 10px 42px;
+    }
+}
+
+@media(max-width: 767px) {
+    .header__logo img {
+        max-width: 100px;
+    }
+
+    .header__list {
+        column-gap: 7px;
+    }
+
+    .header__list a {
+        font-size: 25px;
+    }
+
+    .trip-card__description {
+        display: block;
+    }
+
+    .trip-card__description-right {
+        display: none;
+    }
+
+    .examples__title span {
+        font-size: 25px;
+    }
+
+    .information__articles {
+        display: block;
+    }
+
+    .information__sidebar {
+        width: 100%;
+
+        margin-bottom: 25px;
+    }
+
+    .information__sidebar-index span  {
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+@media(max-width: 568px) {
+    .header__wrapper {
+        flex-direction: column;
+        row-gap: 10px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .header__block {
+        margin: 0 auto;
+    }
+
+    .header__list.header__list-contact {
+        display: block;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .header__list.header__list-mobile {
+        display: flex;
+    }
+
+    .trip-card__description-top {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .trip-card__description-titlea {
+        font-size: 27px;
+    }
+
+    .examples {
+        flex-direction: column;
+    }
+
+    .rating {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: start;
+    }
+
+    .rating__wrapper {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+
+    .promotion__info {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .promotion__value {
+        font-size: 35px;
+        text-align: start;
+    }
+
+    .promotion__btn {
+        padding: 10px 20px;
+    }
+
+    .main-article__title {
+        font-size: 30px;
+    }
+}
